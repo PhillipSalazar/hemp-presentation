@@ -1,0 +1,46 @@
+
+
+h1 {
+  font-family: font !important;
+}
+.left {
+  float: left;
+  width: 45%;
+}
+
+.right {
+  float: right;
+}
+
+img {
+  height: 400px;
+}
+
+.borderless {
+ border-width:  0px !important;
+}
+
+.margins {
+  margin-top: 0.5em !important;
+}
+
+.space {
+  margin-top: 2em !important;
+}
+
+.ico {
+  border-width: 0px;
+  height: 200px;
+  float: left;
+
+}
+
+
+.col {
+    float: left;
+  /*  margin-left: 1em !important;*/
+}
+
+.total {
+  margin-left: 2em !important;
+}

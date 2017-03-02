@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="shortcut icon" href="/images/favicon.ico" />
+  <link type="text/css" rel="stylesheet" href="/css/reveal.css">
+  <link type="text/css" rel="stylesheet" href="/css/theme/simple.css">
+  <link href="/css/simply-toast.css" rel="stylesheet"/>
+  <link type="text/css" rel="stylesheet" href="/css/style.css">
+
+</head>
+<body ng-app="slides">
+  <div class="reveal" ng-controller="control">
+            <div class="slides">
+              <!-- still a mod!!!!! -->
+                <section>
+                  <div class="total">
+                    <div class="col">
+                      <img class="ico borderless" ng-src="{{imageurl5}}">
+                    </div>
+                    <div class="col">
+                  <h1 >{{title}}</h1>
+                  <p>By: {{name}}</p>
+                </div>
+
+                <div class="col">
+                  <img class="ico borderless" ng-src="{{imageurl5}}">
+                </div>
+
+                </div>
+                </section>
+                <!-- part 1-->
+                <section>
+                  <h3>{{part1}}</h3>
+                  <div class="box">
+                    <div class="left">
+                  <ul>
+
+                  <br>
+                  <br>
+                  <li class="fragment pace">{{list[0]}}</li>
+                  <br>
+                  <br>
+                  <li class="fragment pace">{{list[1]}}</li>
+
+
+                  </ul>
+                </div>
+                <div class="right">
+                  <div class="bordar"><img ng-src="{{imageurl2}}"></div>
+                </div>
+                </section>
+                <!-- part 2-->
+                <section>
+
+                <h3>{{part2}}</h3>
+                <div class="box">
+                  <div class="left">
+                <ul>
+                  <li class="margins" ng-repeat="a in hemp_list">{{a}}</li>
+                </ul>
+              </div>
+              <div class="right">
+                <div class="bordar"><img ng-src="{{imageurl4}}"></div>
+              </div>
+                </section>
+                <!-- part 3-->
+                <section>
+                  <h3>{{part3}}</h3>
+                  <div class="box">
+                    <div class="left">
+                  <ul>
+                    <li class="fragment pace">{{world_list[0]}}</li>
+                    <br>
+                    <br>
+                    <li class="fragment pace">{{world_list[1]}}</li>
+                  </ul>
+                </div>
+
+                <div class="right">
+                  <div class="bordar"><img ng-src="{{imageurl3}}"></div>
+                </div>
+              </div>
+                </section>
+
+                <!-- summary -->
+                <section>
+                  <h3>{{part4}}</h3>
+                  <div class="box">
+                    <div class="left">
+                  <ul>
+                    <li class="margins" ng-repeat="d in summary">{{d}}</li>
+                  </ul>
+                </div>
+                <div class="right">
+                    <img class="borderless" ng-src="{{imageurl1}}">
+                </div>
+              </div>
+                </section>
+
+                <section>
+                  <div class="total">
+                    <div class="col">
+                      <img class="ico borderless" ng-src="{{imageurl5}}">
+                    </div>
+                    <div class="col">
+                  <h1 class="col" id="fin">Fin!!!</h1>
+                </div>
+                  <div class="col">
+                    <img class="ico borderless" ng-src="{{imageurl5}}">
+                  </div>
+
+                  </div>
+                </section>
+            </div>
+        </div>
+        <script src="/js/reveal.js"></script>
+        <script src="/bower_components/angular/angular.min.js"></script>
+        <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="/js/simply-toast.js"></script>
+        <script src="/js/code.js"></script>
+        <script src="/js/app.js"></script>
+        <script src="/js/toast.js"></script>
+</body>
+</html>
